@@ -1,0 +1,514 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #EFF8FF;
+}
+.container{
+  width: 95%;
+  margin: auto;
+}
+
+
+/*
+----------------------Admin Login Page---------------- */
+.admin{
+  margin:20px auto;
+  width: 95%;
+}
+.admin h3{
+  text-align: center;
+  text-transform: uppercase;
+  color: #1b1bf0;
+  color: #e05c5c;
+}
+.admin form{
+  margin:20px 0px;
+}
+.admin input{
+  width: 100%;
+  margin:5px auto;
+  padding: 8px;
+  font-size: 17px; 
+}
+.admin button{
+  width: 100%;
+  padding: 12px;
+  background: #1b1bf0;
+  color: #000;
+  border: none;
+  margin-top: 5px;
+  box-shadow: 1px 1px 1px grey;
+}
+
+/* ----------------- END ------------------- */
+
+/* Admin Link page Styles  */
+.schedule{
+  margin:10px auto;
+  /* background: rebeccapurple; */
+  width: 90%;
+}
+.schedule_greets{
+  margin:15px 5px;
+}
+.schedule_greets h2{
+  font-weight: 500;
+}
+.schedule_links {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-between;
+  
+}
+.schedule_links ul{
+  /* background: coral; */
+  padding: 4px;
+  list-style: none;
+}
+.schedule_links a{
+  text-decoration:none;
+  background: #2a2adb;;
+  color: #fff;
+  margin: 10px auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.admin_links .newExamBtn{
+  text-align: center;
+  display: block;
+}
+
+.head_schedule{
+  margin-top: 20px;
+} 
+
+/* ***************schedule_home page************ */
+.schedule_home{
+  /* background: red; */
+  width: 90%;
+  margin: auto;
+}
+
+/* *************Test Form or Request**************** */
+.test_info{
+  width: 90%;
+  margin: auto;
+}
+
+.test_form {
+  /* background: #cacaca; */
+  margin-top: 30px;
+ 
+}
+.test_form input{
+  width: 100%;
+  height: 30px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #111;
+  margin-bottom:15px;
+  outline: none;
+  padding: 0px;
+}
+.test_form textarea{
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-bottom: 1px solid #111;
+}
+.not_time, .time, .open{
+  background:none;
+  width: 100%;  
+  display: block;
+  padding: 5px;
+  border: 1px solid dimgray;
+  text-align: center;
+  cursor: pointer;
+ 
+}
+
+.proceedBtn{
+  background: lightgray;
+  border: none;
+  padding:10px 30px 10px 30px;
+  width: 86%;
+  margin:10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  /* background: rebeccapurple; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.btn button{
+  width: 90%;
+  padding: 10px;
+  margin: 3px 0px;
+  /* border: 1px solid #111; */
+  box-shadow: 0px 1px 1px 0px dimgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+
+} 
+
+/* ************ Question Form ***************** */
+ .formSchedule{
+   width: 90%;
+   margin: auto;
+  }
+.form_question{
+  /* background: rgb(182, 182, 182); */
+  width: 95%;
+  margin:25px auto;
+ 
+}
+.form_question textarea{
+  width: 100%;
+  margin: auto;
+  display: block;
+  height: 90px;
+  font-size: 17px;
+}
+.form_question input[type='number']{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-size: 17px;
+
+}
+.form_question input[type='text']{
+  width: 90%;
+  margin:5px auto;
+  padding: 8px;
+  font-size: 17px; 
+
+}
+.form_question input[type='radio']{
+  margin: 5px;
+  font-size: larger;
+}
+.form_question button{
+  width: 100%;
+  display: block;
+  padding: 8px;
+  margin:10px auto;
+  cursor: pointer;
+}
+
+/* *********** questionSummary****************** */
+.questionSummary{
+  /* background: red; */
+  width: 100%;
+  margin:25px auto;
+  line-height: 19px;
+}
+
+.forms .submitBtn{
+  width: 95%;
+  margin:10px auto;
+  display: block;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  box-shadow: 0px 1px 1px 0px dimgray;
+}
+ 
+
+/* Already Scheduled Exams List */
+ 
+.scheduledList {
+  /* background: red; */
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin:15px auto;
+}
+.scheduledList a{
+  text-decoration: none;
+  color: #111;
+}
+.scheduledCont button{
+  background:none;
+  border: none;
+  width: 90px;
+  float: right;
+  margin: 10px 0px 0px auto;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+}
+.scheduled{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  margin: auto;
+  background:#2a2adb;
+  color: #fff; 
+}
+.scheduled div{
+  margin:5px 10px;
+  height: 60px;
+  width: 130px;
+  display: inherit;
+  align-items: center;
+}
+.scheduled .courseTitle{
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 700;
+}
+
+
+
+/* *******************updateForm****************** */
+.updateForm{
+  width: 90%;
+  margin: auto;
+}
+.updateForm input{
+  width: 100%;
+  margin:5px auto;
+  padding: 5px;
+  font-size: 16px; 
+}
+.updateForm textarea{
+  width: 100%;
+  height: 60px;
+  /* border: none; */
+  /* border-bottom: 1px solid #111; */
+}
+
+
+/* TEstonwer table */
+.accept_table{
+  width: 90%;
+  margin:30px auto;
+}
+table{
+  border-collapse: collapse;
+  width: 80%;
+  
+}
+table thead tr{
+  background: #111;
+  height: 30px;
+  color: #fff;
+}
+table tr td{
+  padding: 5px;
+  margin: 5px;
+}
+table button{
+  background: #6ABD1A;
+  color: #fff;
+  border:1px solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.get_single_exam{
+  /* background: rosybrown; */
+  width: 90%;
+  margin: auto;
+}
+
+.single_exam_info{
+  margin: auto;
+}
+.single_exam_info input{
+  width: 100%;
+  margin:5px auto;
+  padding: 5px;
+  font-size: 16px;
+}
+.single_exam_info textarea{
+  width: 100%;
+  margin:5px auto;
+  padding: 5px;
+  font-size: 16px;
+  height: 70px;
+}
+.error{
+  color: red;
+  position: absolute;
+  right: 30px;
+  /* background: coral; */
+} 
+
+
+/*  0C397D 77EACE
+Start =     2022-06-03T08:35:00 
+created =   2022-05-31T03:38:12.444
+
+
+
+
+ // axios.post('https://morning-gorge-09623.herokuapp.com/api/v1/auth/register', jsonData,
+    // {headers:{
+    //   'Accept': 'application/json, text/plain',
+    //   'Content-Type': 'application/json;charset=UTF-8'
+    // }} )
+    // .then((response)=>{
+    //   console.log("RESPONSE",response);
+    //   console.log("RESPONSE:::DATA",response.data);
+    //   console.log("RESPONSE:::STATUS",response.status);
+    //   if(response.status === '201'){
+    //     setMsg("New User Create Successfully.")  
+    //   }
+    //   setLoading(false)
+    //   setMsg(response.status)
+    // })
+    // .catch((error)=>{
+    //   console.log(error)
+    //   console.log("Error Message:::",error.message)
+    //   console.log("Error in Axios:::",error.response.data.error_message)
+    //   setLoading(false)
+    //   setMsg(error.response.data.error_message)
+    // })
+    // setAuth(data && data)
+    console.log(data)
+    localStorage.setItem('name', data.name);
+    localStorage.setItem('email', data.email);
+    localStorage.setItem('password', data.password);
+    // toast.success("Login Successfully", { theme: "colored" });
+    // navigate('/admin');
+
+      
+    
+
+
+
+
+
+    import axios from 'axios';
+import React, { useContext, useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
+import { DataContext } from '../../Context/DataContext';
+import { Container, Input, LoginForm } from '../../Styled';
+const url = "https://morning-gorge-09623.herokuapp.com/api/v1/auth/";
+
+function AdminLogin() {
+
+  const { navigate } = useContext(DataContext);
+
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const [isSubmit, setisSubmit] = useState(false);
+  const [errors, setErrors] = useState({});
+
+
+  const validation = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.name) {
+      errors.name = "Name is required";
+    }
+    if (!values.email) {
+      errors.email = "Email is required";
+    } else if (!regex.test(values.email)) {
+      errors.email = "this is not a valid email";
+    }
+
+    if (!values.password) {
+      errors.password = "Password is required";
+    }else if(values.password.length === 0){
+      errors.password = "Password can not be empty"
+    } 
+    else if (values.password.length < 4) {
+      errors.password = "Password must be more than 4 characters";
+    } else if (values.password.length > 10) {
+      errors.password = "Password cannot exceed more than 10 characters";
+    }
+    
+    return errors;
+  };
+
+
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setErrors(validation(values));
+    if (Object.keys(errors).length === 0 && isSubmit){
+      console.log(values);      
+    }
+    try {
+       const resp =  await axios.post(url, {
+        name: values.fullname,
+        email: values.email,
+        password: values.password,
+      
+      }) ;
+      console.log(resp.data);
+    } catch (error) {
+      console.log(error);
+    }
+    setisSubmit(true);
+    
+  }
+
+  useEffect(() => {
+    if (Object.keys(errors).length === 0 && isSubmit) {
+      <div className="successfull">
+        <div className="message">Signed in successfully</div>
+      </div>;
+    }
+  }, [errors]);
+
+  return (
+    <Container>
+      <LoginForm>
+        <div>
+          <h3>Admin Login. </h3>
+         
+        </div>
+
+        <div>
+          <form onSubmit={handleSubmit}>
+            <label>Name  {errors.email && <span className='error'>{errors.name}</span>}
+              <Input type='text' value={values.name} onChange={(e) => setValues({...values, name:e.target.value})} />
+            </label>
+
+            <label>Email  {errors.email && <span className='error'>{errors.email}</span>}
+              <Input type='text' value={values.email} onChange={(e) => setValues({...values, email:e.target.value})} /></label>
+            <label>Password  {errors.email && <span className='error'>{errors.password}</span>}
+              <Input type='password' value={values.password} onChange={(e) => setValues({...values, password:e.target.value})} /></label>
+            <button>Submit</button>
+          </form>
+        </div>
+      </LoginForm>
+      <Link to='/admin'> Login</Link>
+
+      <div>
+        <p>Name: {values.name}</p>
+        <p>Email: {values.email}</p>
+        <p>Password: {values.password}</p>
+
+      </div>
+    </Container>
+  )
+}
+
+export default AdminLogin
+
+
+*/

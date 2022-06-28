@@ -1,0 +1,82 @@
+ <div className="form_body">
+
+      <div className='formSchedule'>
+
+        <div className='test_desc' style={{ display: style ? 'none' : '' }} >
+          <TestRequest questions={questions} />
+        </div>
+
+        <div className='form_question' style={{ display: !style ? 'none' : '' }}  >
+          {loading && <p>Loading...</p>}
+          {msg && <p style={{ display: 'block', color: '#fff', background: 'red' }}>{msg}</p>}
+          <h3>Q{questions.length === 0 ? '' : `${questions.length}`}</h3>
+          <form onSubmit={handleQuestionSubmit}>
+            <div>
+              <label>Question <textarea name='question' value={text} onChange={(e) => setText(e.target.value)} /> </label><br />
+              <label>Points <input type='number' name='point' value={point} onChange={(e) => setPoint(e.target.value)} /> </label> <br />
+              <h3>Options</h3>
+              <div>
+                <label><input placeholder='A' type='text' name='A' value={optA} onChange={(e) => setOptA(e.target.value)} />
+                  <input
+                    type='radio'
+                    name='answer'
+                    value={optA}
+                    onChange={(e) => setAnswer(e.target.value)}
+                    checked={answer === optA}
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label><input placeholder='B' type='text' name='B' value={optB} onChange={(e) => setOptB(e.target.value)} />
+                  <input
+                    type='radio'
+                    name='answer'
+                    value={optB}
+                    onChange={(e) => setAnswer(e.target.value)}
+                    checked={answer === optB}
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label><input placeholder='C' type='text' name='C' value={optC} onChange={(e) => setOptC(e.target.value)} />
+                  <input
+                    type='radio'
+                    name='answer'
+                    value={optC}
+                    onChange={(e) => setAnswer(e.target.value)}
+                    checked={answer === optC}
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label><input placeholder='D' type='text' name='D' value={optD} onChange={(e) => setOptD(e.target.value)} />
+                  <input
+                    type='radio'
+                    name='answer'
+                    value={optD}
+                    onChange={(e) => setAnswer(e.target.value)}
+                    checked={answer === optD}
+                  /> </label>
+              </div>
+
+              <button>Add</button>
+
+            </div>
+
+          </form>
+
+          <button disabled={questions.length === 0} onClick={() => { handleButtonSubmit.current.click() }}>Final Submit</button>
+
+        </div>
+      </div>
+
+      <button onClick={() => setStyle(!style)} className='proceedBtn'> {style ? 'Prev' : 'Next'} {style ? <FaArrowLeft /> : <FaArrowRight />}  </button>
+
+      <div className='question_list' style={{ display: style ? 'block' : 'none' }}>
+        <QuestionList questions={questions} setQuestions={setQuestions} />
+      </div>
+
+    </div>
